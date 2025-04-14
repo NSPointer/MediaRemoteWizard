@@ -1,0 +1,716 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E9C654622DACB4FE001B058D /* RunningApplicationKit in Frameworks */ = {isa = PBXBuildFile; productRef = E9C654612DACB4FE001B058D /* RunningApplicationKit */; };
+		E9C654832DACB58C001B058D /* HelperClient in Frameworks */ = {isa = PBXBuildFile; productRef = E9C654822DACB58C001B058D /* HelperClient */; };
+		E9C654852DACB58C001B058D /* InjectionService in Frameworks */ = {isa = PBXBuildFile; productRef = E9C654842DACB58C001B058D /* InjectionService */; };
+		E9C654872DACB594001B058D /* HelperServer in Frameworks */ = {isa = PBXBuildFile; productRef = E9C654862DACB594001B058D /* HelperServer */; };
+		E9C654892DACB594001B058D /* InjectionService in Frameworks */ = {isa = PBXBuildFile; productRef = E9C654882DACB594001B058D /* InjectionService */; };
+		E9C6548B2DACB599001B058D /* FilesService in Frameworks */ = {isa = PBXBuildFile; productRef = E9C6548A2DACB599001B058D /* FilesService */; };
+		E9C6548D2DACB59E001B058D /* FilesService in Frameworks */ = {isa = PBXBuildFile; productRef = E9C6548C2DACB59E001B058D /* FilesService */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E9C6548E2DACB5A9001B058D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E9C654472DACB497001B058D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E9C654732DACB57D001B058D;
+			remoteInfo = MediaRemoteInjection;
+		};
+		E9C654902DACB5A9001B058D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E9C654472DACB497001B058D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E9C654672DACB536001B058D;
+			remoteInfo = com.JH.mediaremotedd;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		E9C654662DACB536001B058D /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		E9C6544F2DACB497001B058D /* MediaRemoteWizard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MediaRemoteWizard.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E9C654682DACB536001B058D /* com.JH.mediaremotedd */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = com.JH.mediaremotedd; sourceTree = BUILT_PRODUCTS_DIR; };
+		E9C654742DACB57D001B058D /* MediaRemoteInjection.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MediaRemoteInjection.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		E9C6547C2DACB57D001B058D /* Exceptions for "MediaRemoteInjection" folder in "MediaRemoteInjection" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			publicHeaders = (
+				MediaRemoteInjection.h,
+			);
+			target = E9C654732DACB57D001B058D /* MediaRemoteInjection */;
+		};
+		E9C654F22DACFC66001B058D /* Exceptions for "MediaRemoteWizard" folder in "MediaRemoteWizard" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = E9C6544E2DACB497001B058D /* MediaRemoteWizard */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		E9C654512DACB497001B058D /* MediaRemoteWizard */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				E9C654F22DACFC66001B058D /* Exceptions for "MediaRemoteWizard" folder in "MediaRemoteWizard" target */,
+			);
+			path = MediaRemoteWizard;
+			sourceTree = "<group>";
+		};
+		E9C654692DACB536001B058D /* com.JH.mediaremotedd */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = com.JH.mediaremotedd;
+			sourceTree = "<group>";
+		};
+		E9C654752DACB57D001B058D /* MediaRemoteInjection */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				E9C6547C2DACB57D001B058D /* Exceptions for "MediaRemoteInjection" folder in "MediaRemoteInjection" target */,
+			);
+			path = MediaRemoteInjection;
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E9C6544C2DACB497001B058D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E9C6548D2DACB59E001B058D /* FilesService in Frameworks */,
+				E9C654622DACB4FE001B058D /* RunningApplicationKit in Frameworks */,
+				E9C654832DACB58C001B058D /* HelperClient in Frameworks */,
+				E9C654852DACB58C001B058D /* InjectionService in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E9C654652DACB536001B058D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E9C6548B2DACB599001B058D /* FilesService in Frameworks */,
+				E9C654892DACB594001B058D /* InjectionService in Frameworks */,
+				E9C654872DACB594001B058D /* HelperServer in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E9C654712DACB57D001B058D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E9C654462DACB497001B058D = {
+			isa = PBXGroup;
+			children = (
+				E9C654512DACB497001B058D /* MediaRemoteWizard */,
+				E9C654692DACB536001B058D /* com.JH.mediaremotedd */,
+				E9C654752DACB57D001B058D /* MediaRemoteInjection */,
+				E9C654812DACB58C001B058D /* Frameworks */,
+				E9C654502DACB497001B058D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E9C654502DACB497001B058D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E9C6544F2DACB497001B058D /* MediaRemoteWizard.app */,
+				E9C654682DACB536001B058D /* com.JH.mediaremotedd */,
+				E9C654742DACB57D001B058D /* MediaRemoteInjection.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E9C654812DACB58C001B058D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		E9C6546F2DACB57D001B058D /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		E9C6544E2DACB497001B058D /* MediaRemoteWizard */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E9C6545C2DACB498001B058D /* Build configuration list for PBXNativeTarget "MediaRemoteWizard" */;
+			buildPhases = (
+				E9C6544B2DACB497001B058D /* Sources */,
+				E9C6544C2DACB497001B058D /* Frameworks */,
+				E9C6544D2DACB497001B058D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E9C6548F2DACB5A9001B058D /* PBXTargetDependency */,
+				E9C654912DACB5A9001B058D /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				E9C654512DACB497001B058D /* MediaRemoteWizard */,
+			);
+			name = MediaRemoteWizard;
+			packageProductDependencies = (
+				E9C654612DACB4FE001B058D /* RunningApplicationKit */,
+				E9C654822DACB58C001B058D /* HelperClient */,
+				E9C654842DACB58C001B058D /* InjectionService */,
+				E9C6548C2DACB59E001B058D /* FilesService */,
+			);
+			productName = MediaRemoteWizard;
+			productReference = E9C6544F2DACB497001B058D /* MediaRemoteWizard.app */;
+			productType = "com.apple.product-type.application";
+		};
+		E9C654672DACB536001B058D /* com.JH.mediaremotedd */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E9C6546C2DACB536001B058D /* Build configuration list for PBXNativeTarget "com.JH.mediaremotedd" */;
+			buildPhases = (
+				E9C654642DACB536001B058D /* Sources */,
+				E9C654652DACB536001B058D /* Frameworks */,
+				E9C654662DACB536001B058D /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				E9C654692DACB536001B058D /* com.JH.mediaremotedd */,
+			);
+			name = com.JH.mediaremotedd;
+			packageProductDependencies = (
+				E9C654862DACB594001B058D /* HelperServer */,
+				E9C654882DACB594001B058D /* InjectionService */,
+				E9C6548A2DACB599001B058D /* FilesService */,
+			);
+			productName = com.JH.mediaremotedd;
+			productReference = E9C654682DACB536001B058D /* com.JH.mediaremotedd */;
+			productType = "com.apple.product-type.tool";
+		};
+		E9C654732DACB57D001B058D /* MediaRemoteInjection */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E9C6547D2DACB57D001B058D /* Build configuration list for PBXNativeTarget "MediaRemoteInjection" */;
+			buildPhases = (
+				E9C6546F2DACB57D001B058D /* Headers */,
+				E9C654702DACB57D001B058D /* Sources */,
+				E9C654712DACB57D001B058D /* Frameworks */,
+				E9C654722DACB57D001B058D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				E9C654752DACB57D001B058D /* MediaRemoteInjection */,
+			);
+			name = MediaRemoteInjection;
+			packageProductDependencies = (
+			);
+			productName = MediaRemoteInjection;
+			productReference = E9C654742DACB57D001B058D /* MediaRemoteInjection.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E9C654472DACB497001B058D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1620;
+				LastUpgradeCheck = 1620;
+				TargetAttributes = {
+					E9C6544E2DACB497001B058D = {
+						CreatedOnToolsVersion = 16.2;
+					};
+					E9C654672DACB536001B058D = {
+						CreatedOnToolsVersion = 16.2;
+					};
+					E9C654732DACB57D001B058D = {
+						CreatedOnToolsVersion = 16.2;
+					};
+				};
+			};
+			buildConfigurationList = E9C6544A2DACB497001B058D /* Build configuration list for PBXProject "MediaRemoteWizard" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E9C654462DACB497001B058D;
+			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				E9C654602DACB4FE001B058D /* XCRemoteSwiftPackageReference "RunningApplicationKit" */,
+				E9C654632DACB512001B058D /* XCRemoteSwiftPackageReference "swift-helper-service" */,
+			);
+			preferredProjectObjectVersion = 77;
+			productRefGroup = E9C654502DACB497001B058D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E9C6544E2DACB497001B058D /* MediaRemoteWizard */,
+				E9C654672DACB536001B058D /* com.JH.mediaremotedd */,
+				E9C654732DACB57D001B058D /* MediaRemoteInjection */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E9C6544D2DACB497001B058D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E9C654722DACB57D001B058D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E9C6544B2DACB497001B058D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E9C654642DACB536001B058D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E9C654702DACB57D001B058D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E9C6548F2DACB5A9001B058D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E9C654732DACB57D001B058D /* MediaRemoteInjection */;
+			targetProxy = E9C6548E2DACB5A9001B058D /* PBXContainerItemProxy */;
+		};
+		E9C654912DACB5A9001B058D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E9C654672DACB536001B058D /* com.JH.mediaremotedd */;
+			targetProxy = E9C654902DACB5A9001B058D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		E9C6545A2DACB498001B058D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		E9C6545B2DACB498001B058D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		E9C6545D2DACB498001B058D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = MediaRemoteWizard/MediaRemoteWizard.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = D5Q73692VW;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MediaRemoteWizard/Info.plist;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSMainNibFile = MainMenu;
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 15.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.JH.MediaRemoteWizard;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		E9C6545E2DACB498001B058D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = MediaRemoteWizard/MediaRemoteWizard.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = D5Q73692VW;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MediaRemoteWizard/Info.plist;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSMainNibFile = MainMenu;
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 15.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.JH.MediaRemoteWizard;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		E9C6546D2DACB536001B058D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = D5Q73692VW;
+				ENABLE_HARDENED_RUNTIME = YES;
+				MACOSX_DEPLOYMENT_TARGET = 15.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		E9C6546E2DACB536001B058D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = D5Q73692VW;
+				ENABLE_HARDENED_RUNTIME = YES;
+				MACOSX_DEPLOYMENT_TARGET = 15.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		E9C6547E2DACB57D001B058D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = D5Q73692VW;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = NO;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 15.0;
+				MARKETING_VERSION = 1.0;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
+				PRODUCT_BUNDLE_IDENTIFIER = com.JH.MediaRemoteInjection;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_INSTALL_OBJC_HEADER = NO;
+				SWIFT_VERSION = 5.0;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		E9C6547F2DACB57D001B058D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = D5Q73692VW;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = NO;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 15.0;
+				MARKETING_VERSION = 1.0;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
+				PRODUCT_BUNDLE_IDENTIFIER = com.JH.MediaRemoteInjection;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_INSTALL_OBJC_HEADER = NO;
+				SWIFT_VERSION = 5.0;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E9C6544A2DACB497001B058D /* Build configuration list for PBXProject "MediaRemoteWizard" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E9C6545A2DACB498001B058D /* Debug */,
+				E9C6545B2DACB498001B058D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E9C6545C2DACB498001B058D /* Build configuration list for PBXNativeTarget "MediaRemoteWizard" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E9C6545D2DACB498001B058D /* Debug */,
+				E9C6545E2DACB498001B058D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E9C6546C2DACB536001B058D /* Build configuration list for PBXNativeTarget "com.JH.mediaremotedd" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E9C6546D2DACB536001B058D /* Debug */,
+				E9C6546E2DACB536001B058D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E9C6547D2DACB57D001B058D /* Build configuration list for PBXNativeTarget "MediaRemoteInjection" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E9C6547E2DACB57D001B058D /* Debug */,
+				E9C6547F2DACB57D001B058D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		E9C654602DACB4FE001B058D /* XCRemoteSwiftPackageReference "RunningApplicationKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Mx-Iris/RunningApplicationKit";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+		E9C654632DACB512001B058D /* XCRemoteSwiftPackageReference "swift-helper-service" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Mx-Iris/swift-helper-service";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		E9C654612DACB4FE001B058D /* RunningApplicationKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E9C654602DACB4FE001B058D /* XCRemoteSwiftPackageReference "RunningApplicationKit" */;
+			productName = RunningApplicationKit;
+		};
+		E9C654822DACB58C001B058D /* HelperClient */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E9C654632DACB512001B058D /* XCRemoteSwiftPackageReference "swift-helper-service" */;
+			productName = HelperClient;
+		};
+		E9C654842DACB58C001B058D /* InjectionService */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E9C654632DACB512001B058D /* XCRemoteSwiftPackageReference "swift-helper-service" */;
+			productName = InjectionService;
+		};
+		E9C654862DACB594001B058D /* HelperServer */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E9C654632DACB512001B058D /* XCRemoteSwiftPackageReference "swift-helper-service" */;
+			productName = HelperServer;
+		};
+		E9C654882DACB594001B058D /* InjectionService */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E9C654632DACB512001B058D /* XCRemoteSwiftPackageReference "swift-helper-service" */;
+			productName = InjectionService;
+		};
+		E9C6548A2DACB599001B058D /* FilesService */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E9C654632DACB512001B058D /* XCRemoteSwiftPackageReference "swift-helper-service" */;
+			productName = FilesService;
+		};
+		E9C6548C2DACB59E001B058D /* FilesService */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E9C654632DACB512001B058D /* XCRemoteSwiftPackageReference "swift-helper-service" */;
+			productName = FilesService;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = E9C654472DACB497001B058D /* Project object */;
+}
