@@ -10,7 +10,7 @@
 @class NSMutableDictionary, NSObject, MRDMediaRemoteUIService, MRXPCConnection, NSMutableArray, MRXPCConnectionMonitor, NSString, MRPlaybackQueueClient, MRPlayerPath, MRDPairingHandler, NSOperationQueue, NSArray, NSData, MRDTaskAssertion;
 @protocol OS_dispatch_source, OS_dispatch_queue, MRDXPCMessageHandling, MRXPCConnectionMonitorDelegate;
 
-@interface MRDMediaRemoteClient : NSObject <MRXPCConnectionMonitorDelegate> {
+@interface MRDMediaRemoteClient : NSObject {
     NSObject<OS_dispatch_source> *_source; // offset: 8
     NSObject<OS_dispatch_queue> *_serialQueue; // offset: 16
     NSObject<OS_dispatch_queue> *_workerQueue; // offset: 24
@@ -60,7 +60,7 @@
 - (void)addPendingPlaybackSessionMigrateEvent:(id)a0 playerPath:(id)a1;
 - (BOOL)removePendingPlaybackSessionMigrateEvent:(id)a0;
 - (void)flushPendingPlaybackSessionMigrateEvents:(id /* block */)a0;
-//- (BOOL)_isAllowedAccessToDataFromPlayerPath:(id)a0;
+//- (BOOL)_isAllowedAccessToDataFromPlayerPath:(id)a0; Remove from 15.4
 - (BOOL)isAllowedAccessToDataFromPlayerPath:(id)a0;
 - (void)postNotification:(id)a0;
 - (void)pauseNotifications;
@@ -105,11 +105,16 @@
 }
 
 + (void)load {
+    NSLog(@"MRDMediaRemoteClientHook loaded");
     Class MRDMediaRemoteClientClass = NSClassFromString(@"MRDMediaRemoteClient");
     if (!MRDMediaRemoteClientClass) return;
     Method method1 = class_getInstanceMethod(MRDMediaRemoteClientClass, @selector(isAllowedAccessToDataFromPlayerPath:));
     Method method2 = class_getInstanceMethod(MRDMediaRemoteClientClass, @selector(mediaRemoteInjection_isAllowedAccessToDataFromPlayerPath:));
-    method_exchangeImplementations(method1, method2);
+    if (method1 && method2) {
+        method_exchangeImplementations(method1, method2);
+        NSLog(@"Swizzled isAllowedAccessToDataFromPlayerPath with mediaRemoteInjection_isAllowedAccessToDataFromPlayerPath");
+    }
+    
 }
 
 

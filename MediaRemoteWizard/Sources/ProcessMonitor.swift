@@ -67,10 +67,10 @@ class ProcessMonitor {
 
     private func pollProcesses() {
         var currentPIDs: Set<pid_t> = []
-        let pids = getAllPIDs() // Implement using proc_listpids
+        let pids = allPIDs() // Implement using proc_listpids
 
         for pid in pids {
-            if let processName = getProcessName(for: pid) { // Implement using proc_pidpath or proc_name
+            if let processName = processName(for: pid) { // Implement using proc_pidpath or proc_name
                 if processName == targetProcessName {
                     currentPIDs.insert(pid)
                     if !monitoredPIDs.contains(pid) {
@@ -158,7 +158,7 @@ class ProcessMonitor {
     }
 
     /// --- Helper functions to implement ---
-    private func getAllPIDs() -> [pid_t] {
+    private func allPIDs() -> [pid_t] {
         // Implementation using proc_listpids
         // ... (see examples online for proc_listpids usage) ...
         var numberOfPIDs: Int32 = 0
@@ -180,7 +180,7 @@ class ProcessMonitor {
         return Array(pids.prefix(Int(numberOfPIDs)))
     }
 
-    private func getProcessName(for pid: pid_t) -> String? {
+    private func processName(for pid: pid_t) -> String? {
         // Implementation using proc_pidpath
         var pathBuffer: [CChar] = .init(repeating: 0, count: Int(4 * MAXPATHLEN))
         let pathLength = proc_pidpath(pid, &pathBuffer, UInt32(pathBuffer.count))

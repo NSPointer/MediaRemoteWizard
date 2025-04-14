@@ -1,24 +1,20 @@
-//
-//  AppDelegate.swift
-//  MediaRemoteWizard
-//
-//  Created by JH on 2025/4/14.
-//
-
-import Cocoa
+import AppKit
 
 @main
 class AppDelegate: NSObject, NSApplicationDelegate {
-    
-    let processMonitor = ProcessMonitor(processName: "mediaremoted")
-    
     func applicationDidFinishLaunching(_ aNotification: Notification) {
-        processMonitor.startMonitoring(interval: 0.5)
+        showMainWindow()
     }
 
     func applicationWillTerminate(_ aNotification: Notification) {}
 
     func applicationSupportsSecureRestorableState(_ app: NSApplication) -> Bool {
         return true
+    }
+
+    @objc func showMainWindow() {
+        MainWindowController.shared.showWindow(nil)
+        NSApplication.shared.setActivationPolicy(.regular)
+        NSApplication.shared.activate(ignoringOtherApps: true)
     }
 }
