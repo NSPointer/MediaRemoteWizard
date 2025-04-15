@@ -1,5 +1,4 @@
 import AppKit
-import SwiftUI
 
 final class MainWindowController: NSWindowController, NSWindowDelegate {
     
@@ -34,7 +33,7 @@ final class MainWindowController: NSWindowController, NSWindowDelegate {
     
     
     func windowWillClose(_ notification: Notification) {
-//        NSApplication.shared.setActivationPolicy(.accessory)
+        NSApplication.shared.setActivationPolicy(.accessory)
     }
 }
 

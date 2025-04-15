@@ -86,7 +86,7 @@
 
 @implementation NSObject (MRDMediaRemoteClientHook)
 
-- (BOOL)mediaRemoteInjection_isAllowedAccessToDataFromPlayerPath:(id)a0 {
+- (BOOL)mediaRemoteDaemonInjection_isAllowedAccessToDataFromPlayerPath:(id)a0 {
     return YES;
 }
 
@@ -109,10 +109,10 @@
     Class MRDMediaRemoteClientClass = NSClassFromString(@"MRDMediaRemoteClient");
     if (!MRDMediaRemoteClientClass) return;
     Method method1 = class_getInstanceMethod(MRDMediaRemoteClientClass, @selector(isAllowedAccessToDataFromPlayerPath:));
-    Method method2 = class_getInstanceMethod(MRDMediaRemoteClientClass, @selector(mediaRemoteInjection_isAllowedAccessToDataFromPlayerPath:));
-    if (method1 && method2) {
+    Method method2 = class_getInstanceMethod(MRDMediaRemoteClientClass, @selector(mediaRemoteDaemonInjection_isAllowedAccessToDataFromPlayerPath:));
+    if (method1 && method2 && method1 != method2) {
         method_exchangeImplementations(method1, method2);
-        NSLog(@"Swizzled isAllowedAccessToDataFromPlayerPath with mediaRemoteInjection_isAllowedAccessToDataFromPlayerPath");
+        NSLog(@"Swizzled isAllowedAccessToDataFromPlayerPath with mediaRemoteDaemonInjection_isAllowedAccessToDataFromPlayerPath");
     }
     
 }

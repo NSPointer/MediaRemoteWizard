@@ -3,6 +3,7 @@ import AppKit
 @main
 class AppDelegate: NSObject, NSApplicationDelegate {
     func applicationDidFinishLaunching(_ aNotification: Notification) {
+        _ = MainStatusItemController.shared
         showMainWindow()
     }
 

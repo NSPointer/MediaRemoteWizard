@@ -8,7 +8,12 @@ development_mode="PreRelease"
 
 build_path=${project_path}/build
 
-xcodebuild build -scheme ${scheme_name} -configuration ${development_mode} -destination 'generic/platform=macOS' CONFIGURATION_BUILD_DIR=${build_path} ARCHS="x86_64 arm64e"
+xcodebuild build \
+-scheme ${scheme_name} \
+-configuration ${development_mode} \
+-destination 'generic/platform=macOS' \
+CONFIGURATION_BUILD_DIR=${build_path} \
+ARCHS="x86_64 arm64e"
 
 exit 0
 
