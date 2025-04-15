@@ -8,6 +8,12 @@ This application injects code into mediaremoted, swapping core methods to return
 
 Since code injection is required, you must disable SIP (System Integrity Protection) to use MediaRemoteWizard.
 
+Apple Silicon must also enable arm64e_preview_abi because Apple does not allow third-party arm64e architecture apps to run by default.
+
+```
+sudo nvram boot-args=-arm64e_preview_abi
+```
+
 ## Usage
 
 After opening the application installation helper, try to keep the app running in the background to prevent mediaremoted from restarting and causing the injection to invalid.
