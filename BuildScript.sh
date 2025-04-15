@@ -4,13 +4,11 @@ project_name="MediaRemoteWizard"
 
 scheme_name="MediaRemoteWizard"
 
-development_mode="Debug"
+development_mode="Release"
 
 build_path=${project_path}/build
 
-xcodebuild -scheme ${scheme_name} -arch arm64e -configuration ${development_mode} CONFIGURATION_BUILD_DIR=build
-
-#xcodebuild -scheme ${scheme_name} -arch arm64e -configuration ${development_mode} CONFIGURATION_BUILD_DIR=build/arm64e
+xcodebuild build -scheme ${scheme_name} -configuration ${development_mode} -destination 'generic/platform=macOS' CONFIGURATION_BUILD_DIR=${build_path} ARCHS="x86_64 arm64e"
 
 exit 0
 
