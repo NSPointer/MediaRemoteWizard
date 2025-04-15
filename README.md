@@ -8,6 +8,10 @@ This application injects code into mediaremoted, swapping core methods to return
 
 Since code injection is required, you must disable SIP (System Integrity Protection) to use MediaRemoteWizard.
 
+## Usage
+
+After opening the application installation helper, try to keep the app running in the background to prevent mediaremoted from restarting and causing the injection to fail.
+
 ## Security Concerns
 
 Using this software reduces the security of your system. In future updates, we may add a whitelist feature to allow users to specify which applications can access MediaRemote, while maintaining Apple's original logic for all other applications.
