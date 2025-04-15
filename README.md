@@ -10,7 +10,7 @@ Since code injection is required, you must disable SIP (System Integrity Protect
 
 ## Usage
 
-After opening the application installation helper, try to keep the app running in the background to prevent mediaremoted from restarting and causing the injection to fail.
+After opening the application installation helper, try to keep the app running in the background to prevent mediaremoted from restarting and causing the injection to invalid.
 
 ## Security Concerns
 
